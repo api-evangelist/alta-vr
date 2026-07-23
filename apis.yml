@@ -1,7 +1,29 @@
 aid: alta-vr
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alta-vr.png
 name: Alta VR
-description: Alta VR is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Alta VR (legally Another Axiom LLC) is a virtual reality game studio behind
+  Gorilla Tag, one of the most-played VR titles ever, and the newer social VR
+  world Orion Drift. The studio builds imaginative, physics-driven multiplayer
+  experiences centered on hand-based locomotion and social play across Meta
+  Quest, Steam, and other VR platforms. It runs an Another Axiom Creator
+  Program for community map-building and content creation, and publishes game
+  code and Unity map-export tooling through its public GitHub organization.
+  Alta VR is a portfolio company of a16z. As a VR consumer game studio it does
+  not currently operate a public developer API, OpenAPI specification, or SDK
+  program; its developer-facing surface is limited to open-source game code,
+  custom map tooling, and creator resources.
 url: https://raw.githubusercontent.com/api-evangelist/alta-vr/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +36,36 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Virtual Reality
+- VR
+- Gaming
+- Game Studio
+- Multiplayer
+- Social Gaming
+- Entertainment
 apis: []
+common:
+- type: DomainSecurity
+  url: security/alta-vr-domain-security.yml
+- type: Website
+  url: https://www.anotheraxiom.com/
+- type: GitHubOrganization
+  url: https://github.com/Another-Axiom
+- type: Support
+  url: https://discord.com/invite/gorillatag
+- type: Blog
+  url: https://www.anotheraxiom.com/news
+- type: TermsOfService
+  url: https://www.anotheraxiom.com/terms
+- type: PrivacyPolicy
+  url: https://www.anotheraxiom.com/privacy-policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
